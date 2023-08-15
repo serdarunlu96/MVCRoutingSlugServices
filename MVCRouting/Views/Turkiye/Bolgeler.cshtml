@@ -1,0 +1,14 @@
+﻿@using MVCRouting.Data;
+@model BolgelerViewModel
+@{
+    ViewBag.Title = Model.Bolge.BolgeAd;
+}
+
+<h1>@Model.Bolge.BolgeAd İlleri</h1>
+
+<ul>
+    @foreach(Sehir sehir in Model.Sehirler)
+    {
+        <li>@sehir.SehirAd</li>
+    }
+</ul>
